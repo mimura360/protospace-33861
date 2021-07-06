@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2021_06_12_085813) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "prototypes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.text "catch_copy", null: false
     t.text "concept", null: false
